@@ -60,6 +60,12 @@ void setup() {
 
   clock.begin();
 
+  // NOTE: all pin numbers used here are for the Teensy microcontroller
+  // board, NOT a stock Arduino.  You may need to adapt this code to
+  // your particular situation. (e.g. if making a prop that also uses
+  // the Wave Shield to add sounds, you'd want to use an Arduino Uno and
+  // then steer clear of all the SPI pins (10-13)).
+
   // Enable select lines for I2C multiplexing (only 2 are used here)
   pinMode( 9, OUTPUT);
   pinMode(10, OUTPUT);
